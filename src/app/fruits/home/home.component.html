@@ -1,0 +1,24 @@
+<div>
+  <h1>Angular 13 HTML Table Example</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>price</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of allFruits$ | async">
+        <th>{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price}}</td>
+
+
+      </tr>
+    </tbody>
+  </table>
+</div>
